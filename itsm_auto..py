@@ -23,14 +23,10 @@ class Execl:
             https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-record/search
             推荐获取user_access_token，防止删除或修改数据权限不足
         """
-        self.token = 'Bearer u-cMIzNlzEV95U3z78mVU.Tq55lECB1hGhMgw0ggA02ftw'  # 用户token
-        self.app_token = 'Yfc3b4IbwabvhQs82sBcvtI9nIh'  # 表格token
-        self.table_id = 'tblLmQTkzrrSky10'  # 表格ID
-        self.view_id = 'vewFvAU3rE'  # 视图标识符，唯一
-        """梁"""
-        # self.app_token = 'XQiDbcF0OarrtWserXDcOF5knwb'
-        # self.table_id = 'tblj3UaFI2BpmXcj'
-        # self.view_id = 'vewFvAU3rE'
+        self.token = 'Bearer '  # 用户token
+        self.app_token = ''  # 表格token
+        self.table_id = ''  # 表格ID
+        self.view_id = ''  # 视图标识符，唯一
 
     def request_datas(self, request_mode):
         url = f'https://open.feishu.cn/open-apis/bitable/v1/apps/{self.app_token}/tables/{self.table_id}/records/search'
@@ -414,3 +410,4 @@ if __name__ == '__main__':
         itsm.if_dialog = 2
         itsm.sign_for()  # 代办处理
     itsm.chrom.close()
+
